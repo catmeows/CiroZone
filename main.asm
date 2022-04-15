@@ -70,6 +70,7 @@ clearSpriteBig2
   bne clearSpriteBig1
   rts
     
+    
 ; DRAW SPRITE 12x6
 ;
 ; expects pointer to sprite pattern in spriteSrc
