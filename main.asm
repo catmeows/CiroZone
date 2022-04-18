@@ -140,10 +140,10 @@ copyDirtyLine2
   bcc copyDirtyLine1   ;skip this rectangle if not dirty
   ldx #$04
 copyDirtyLine3
-  jsr copyDirtyBlock0
-  iny
-  dex
-  bne copyDirtyLine3
+  jsr copyDirtyBlock0  ;6+78
+  iny                  ;2
+  dex                  ;2
+  bne copyDirtyLine3   ;3 = 364
   jmp copyDirtyLine4
 copyDirtyLine1
   iny
